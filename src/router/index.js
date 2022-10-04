@@ -279,7 +279,7 @@ const routes = [
 ]
 
 const router = createRouter({
-  history: createWebHashHistory('ignored'),
+  history: createWebHashHistory(process.env.BASE_URL),
   routes,
   scrollBehavior() {
     // always scroll to top
